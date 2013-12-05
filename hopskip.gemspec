@@ -7,11 +7,11 @@ require "hopskip/version"
 Gem::Specification.new do |s|
   s.name        = "hopskip"
   s.version     = Hopskip::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of Hopskip."
-  s.description = "TODO: Description of Hopskip."
+  s.authors     = ["Max Woolf"]
+  s.email       = ["max.woolf@boxuk.com"]
+  s.homepage    = "http://boxuk.com"
+  s.summary     = "Hopscotch introductions written more cleanly in YAML"
+  s.description = "Write your hopscotch introductions using YAML."
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
