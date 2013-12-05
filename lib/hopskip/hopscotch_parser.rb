@@ -1,4 +1,4 @@
-module HopSkip
+module Hopskip
   class HopscotchParser
 
     require 'yaml'
