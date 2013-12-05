@@ -8,7 +8,7 @@ Add `hopskip` to your `Gemfile`
 
     gem 'hopskip'
 
-Add the `hopskip` template to your application layout. It doesn't matter where, as long as `controller` is the controller object currently visiblet o the user.
+Add the `hopskip` template to your application layout. It doesn't matter where, as long as `controller` is the controller object currently visible to the user.
 
     <%= HopscotchParser.new(controller).show %>
 
