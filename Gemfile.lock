@@ -49,6 +49,7 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.25.1)
     multi_json (1.8.2)
+    mysql2 (0.3.13)
     polyglot (0.3.3)
     rack (1.4.5)
     rack-cache (1.2)
@@ -94,4 +95,5 @@ PLATFORMS
 DEPENDENCIES
   hopskip!
   jquery-rails
+  mysql2
   sqlite3
