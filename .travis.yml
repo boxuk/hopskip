@@ -6,6 +6,8 @@ rvm:
 
 env:
   - DB=sqlite
+before_script:
+  - mysql -e 'create database myapp_test;'
 script:
   - RAILS_ENV=test rake db:create
   - RAILS_ENV=test bundle exec rake
