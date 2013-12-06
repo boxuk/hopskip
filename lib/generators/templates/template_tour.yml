@@ -1,0 +1,8 @@
+# This is an example Hopskip tour file.
+---
+index:
+  steps:
+    - title: Welcome to my product
+      content: Welcome
+      target: left_util
+      placement: right
