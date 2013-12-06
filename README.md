@@ -1,6 +1,7 @@
 # Hopskip
 
 [![Code Climate](https://codeclimate.com/github/boxuk/hopskip.png)](https://codeclimate.com/github/boxuk/hopskip)
+[![Build Status](https://travis-ci.org/boxuk/hopskip.png?branch=master)](https://travis-ci.org/boxuk/hopskip)
 
 Write [hopscotch](https://github.com/linkedin/hopscotch) introductions simply by adding YAML files to your Rails application.
 
