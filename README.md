@@ -44,4 +44,8 @@ The contents of each of these files should look similar to this:
         - title: another title...
       #...
 
+You can generate an example tour file by using the included generator:
+
+    rails generate tour [controller_name]
+
 For a full list of params, check out the hopscotch docs.
