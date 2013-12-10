@@ -8,9 +8,12 @@ module Hopskip
 
     def initialize(controller)
       @controller = controller
-      filename = "#{ Rails.root }/app/tours/#{ @controller.controller_name }_tour.yml"
+      filename = Rails.root.join('app', 'tours', "#{ @controller.controller_name }_tour.yml")
+      puts filename
       if File.exists?(filename)
         @yaml_source = YAML::load(File.open("#{ Rails.root }/app/tours/#{ @controller.controller_name }_tour.yml"))
+      else
+        puts 'cannot find file!'
       end
     end
 

@@ -1,5 +1,9 @@
+# test:
+#   adapter: mysql2
+#   database: myapp_test
+#   username: travis
+#   encoding: utf8
+
 test:
-  adapter: mysql2
+  adapter: sqlite3
   database: myapp_test
-  username: travis
-  encoding: utf8

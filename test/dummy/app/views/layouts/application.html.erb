@@ -9,6 +9,6 @@
 <body>
 
 <%= yield %>
-
+<%= Hopskip::HopscotchParser.new(controller).show %>
 </body>
 </html>
