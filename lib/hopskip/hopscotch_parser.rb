@@ -19,7 +19,13 @@ module Hopskip
 
     def show
       if @yaml_source.present? && @yaml_source[@controller.action_name].present?
-        locals = { id: "#{ @controller.controller_name }_#{ @controller.action_name }_tour", steps: @yaml_source[@controller.action_name]['steps'].to_json }
+        steps = @yaml_source[@controller.action_name]['steps']
+
+        steps.each do |step|
+          step['onNext'] = "eval(#{step['onNext']})"
+        end
+
+        locals = { id: "#{ @controller.controller_name }_#{ @controller.action_name }_tour", steps: steps.to_json }
         Erubis::Eruby.new("<script>var tour = {id: \"<%= id %>\",steps: <%= steps %>};hopscotch.startTour(tour);</script>").result(locals).html_safe
       end
     end

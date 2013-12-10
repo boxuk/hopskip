@@ -5,3 +5,4 @@ index:
       content: "Click here to add your first person."
       target: new_person_link
       placement: left
+      onNext: skip()
