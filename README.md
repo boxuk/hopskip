@@ -5,6 +5,11 @@
 
 Write [hopscotch](https://github.com/linkedin/hopscotch) introductions simply by adding YAML files to your Rails application.
 
+## Requirements
+
+* Rails 3.2+
+* Hopscotch `js` and `css` files available. You can use just a standard installation in the asset pipeline or [this gem].(https://github.com/ccschmitz/hopscotch-rails)
+
 ## Install
 
 Add `hopskip` to your `Gemfile`
@@ -50,3 +55,28 @@ You can generate an example tour file by using the included generator:
     rails generate tour [controller_name]
 
 For a full list of params, check out the hopscotch docs.
+
+## Advanced Usage
+
+You can also attach methods to the `onClose`, `onEnd` and other callback methods included with hopscotch. Simply define a hopscotch helper in your view:
+
+    <script>
+      hopscotch.registerHelper('showError', function() {
+        alert("This is an error!");
+      });
+    </script>
+
+  In your tour file, you can now ask that this method is called at various points in the tour's lifecycle:
+
+    ---
+    index:
+      steps:
+        - title: Welcome to My App
+          content: "Some Text..."
+          target: left_util
+          placement: right
+          onNext:
+            - showError
+
+The `showError` helper will now be executed when next is clicked on the first step. You can pass as many helpers as you like to each callback methods.
+
