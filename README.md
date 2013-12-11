@@ -34,22 +34,24 @@ Where each file is name `xyz_tour.yml` where `xyz` is the name of the controller
 
 The contents of each of these files should look similar to this:
 
-    ---
-    index:
-      steps:
-        - title: Welcome to My App
-          content: "Some Text..."
-          target: left_util
-          placement: right
+```YAML
+---
+index:
+  steps:
+    - title: Welcome to My App
+      content: "Some Text..."
+      target: left_util
+      placement: right
 
-        - title: Dashboard
-          content: "This is your dashboard"
-          target: left_util
-          placement: bottom
-    show:
-      steps:
-        - title: another title...
-      #...
+    - title: Dashboard
+      content: "This is your dashboard"
+      target: left_util
+      placement: bottom
+show:
+  steps:
+    - title: another title...
+  #...
+```
 
 You can generate an example tour file by using the included generator:
 
@@ -61,23 +63,26 @@ For a full list of params, check out the hopscotch docs.
 
 You can also attach methods to the `onClose`, `onEnd` and other callback methods included with hopscotch. Simply define a hopscotch helper in your view:
 
-    <script>
-      hopscotch.registerHelper('showError', function() {
-        alert("This is an error!");
-      });
-    </script>
-
+```JavaScript
+<script>
+  hopscotch.registerHelper('showError', function() {
+    alert("This is an error!");
+  });
+</script>
+```
   In your tour file, you can now ask that this method is called at various points in the tour's lifecycle:
 
-    ---
-    index:
-      steps:
-        - title: Welcome to My App
-          content: "Some Text..."
-          target: left_util
-          placement: right
-          onNext:
-            - showError
+```YAML
+---
+index:
+  steps:
+    - title: Welcome to My App
+      content: "Some Text..."
+      target: left_util
+      placement: right
+      onNext:
+        - showError
+```
 
 The `showError` helper will now be executed when next is clicked on the first step. You can pass as many helpers as you like to each callback methods.
 
