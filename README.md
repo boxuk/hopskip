@@ -8,7 +8,7 @@ Write [hopscotch](https://github.com/linkedin/hopscotch) introductions simply by
 ## Requirements
 
 * Rails 3.2+
-* Hopscotch `js` and `css` files available. You can use just a standard installation in the asset pipeline or [this gem].(https://github.com/ccschmitz/hopscotch-rails)
+* Hopscotch `js` and `css` files available. You can use just a standard installation in the asset pipeline or [this gem](https://github.com/ccschmitz/hopscotch-rails).
 
 ## Install
 
@@ -29,7 +29,7 @@ Add the `hopskip` template to your application layout. It doesn't matter where, 
         ├── dashboards_tour.yml
         └── projects_tour.yml
 
-Where each file is name `xyz_tour.yml` where `x` is the name of the controller.
+Where each file is name `xyz_tour.yml` where `xyz` is the name of the controller.
 
 The contents of each of these files should look similar to this:
 
