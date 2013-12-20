@@ -88,6 +88,9 @@
       ],
       "/Users/maxwoolf/Documents/hopskip/lib/hopskip/hopscotch_parser.rb": [
         1,
+        null,
+        1,
+        null,
         1,
         null,
         1,
@@ -96,13 +99,12 @@
         1,
         null,
         1,
-        4,
-        4,
-        4,
-        4,
-        4,
+        5,
+        5,
+        5,
         null,
-        0,
+        4,
+        4,
         null,
         null,
         null,
@@ -112,6 +114,14 @@
         1,
         1,
         null,
+        null,
+        null,
+        1,
+        null,
+        1,
+        5,
+        null,
+        1,
         null,
         null,
         null,
@@ -237,6 +247,11 @@
         1,
         null
       ],
+      "/Users/maxwoolf/Documents/hopskip/test/dummy/app/controllers/failure_controller.rb": [
+        1,
+        null,
+        null
+      ],
       "/Users/maxwoolf/Documents/hopskip/test/dummy/app/controllers/people_controller.rb": [
         1,
         null,
@@ -323,7 +338,6 @@
         1,
         1,
         1,
-        1,
         null,
         null,
         1,
@@ -361,9 +375,15 @@
         1,
         null,
         null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
         null
       ]
     },
-    "timestamp": 1386762037
+    "timestamp": 1387548264
   }
 }

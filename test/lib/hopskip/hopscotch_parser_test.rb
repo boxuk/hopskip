@@ -11,4 +11,10 @@ class HopscotchParserTest < ActiveSupport::TestCase
     assert_nil a.show
   end
 
+  test '#invalid YAML should raise error' do
+    assert_raises Hopskip::InvalidYAMLError do
+      Hopskip::HopscotchParser.new(FailureController.new)
+    end
+  end
+
 end

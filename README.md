@@ -86,6 +86,11 @@ index:
 
 The `showError` helper will now be executed when next is clicked on the first step. You can pass as many helpers as you like to each callback methods.
 
+
+## Error Handling
+
+If the YAML file is not correctly formatted, Hopskip will raise a `Hopskip::InvalidYAMLError` exception.
+
 ## We use Hopskip
 
 We use Hopskip in [FleetSuite](http://www.boxuk.com/fleetsuite/), a business management system offering a set of collaborative project management tools to optimise processes.

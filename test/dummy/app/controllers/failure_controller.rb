@@ -1,0 +1,3 @@
+class FailureController < ApplicationController
+
+end
