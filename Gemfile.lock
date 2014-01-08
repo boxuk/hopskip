@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    hopskip (0.2.0)
+    hopskip (0.2.1)
       rails (~> 3.2.13)
 
 GEM
