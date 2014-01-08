@@ -12,9 +12,9 @@ module Hopskip
     def initialize(controller)
       @controller = controller
       filename = Rails.root.join('app', 'tours', "#{ @controller.controller_name }_tour.yml")
-      raise Hopskip::InvalidYAMLError unless valid_yaml_string?(File.open(filename).read)
 
       if File.exists?(filename)
+        raise Hopskip::InvalidYAMLError unless valid_yaml_string?(File.open(filename).read)
         @yaml_source = YAML::load(File.open("#{ Rails.root }/app/tours/#{ @controller.controller_name }_tour.yml"))
       end
     end
