@@ -1,5 +1,7 @@
 # Hopskip
 
+# This repository is unmaintained
+
 | Version | Status | Quality | Coverage |
 |:--------:|:------------:|:-----:|:-----:|
 | [![Gem Version](https://badge.fury.io/rb/hopskip.png)](http://badge.fury.io/rb/hopskip) | [![Build Status](https://travis-ci.org/boxuk/hopskip.png?branch=master)](https://travis-ci.org/boxuk/hopskip) | [![Code Climate](https://codeclimate.com/github/boxuk/hopskip.png)](https://codeclimate.com/github/boxuk/hopskip) | [![Coverage Status](https://coveralls.io/repos/boxuk/hopskip/badge.png?branch=master)](https://coveralls.io/r/boxuk/hopskip?branch=master) |
